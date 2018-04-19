@@ -8,35 +8,51 @@
                 <div class="panel-heading">Manage Student Record</div>
 
                 <div class="panel-body">
-                     <form class="form-horizontal" method="POST" action="postcomment">
+                     <form class="form-horizontal" method="POST" action="insertStudent">
                         {{ csrf_field() }}
 
                          <div class="form-group">
-                            <label for="name" class="col-md-4 control-label">Title</label>
+                            <label for="name" class="col-md-4 control-label">First Name</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="title" placeholder="Post Title"   required autofocus>
+                                <input id="f_name" type="text" class="form-control" name="f_name" placeholder="First Name"   required autofocus>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name" class="col-md-4 control-label">Category</label>
-                            <div class="col-md-6">
-                            <select name="category" class="form-control">
-                               <option></option>
+                            <label for="name" class="col-md-4 control-label">Last Name</label>
 
+                            <div class="col-md-6">
+                                <input id="l_name" type="text" class="form-control" name="l_name" placeholder="Last Name"   required autofocus>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Gender</label>
+                            <div class="col-md-6">
+                            <select name="gender" class="form-control">
+                               <option value="">Select Gender</option>
+                               <option value="Male">Male</option>
+                               <option value="Female">Female</option>
                             </select>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name" class="col-md-4 control-label">Question</label>
+                            <label for="name" class="col-md-4 control-label">Class</label>
                             <div class="col-md-6">
-                           <textarea id="body" type="text" class="form-control" name="body" placeholder="Type in your Question"   ></textarea>
-                           </div>
+                            <select name="class" class="form-control">
+                               <option value="">Select Class</option>
+                               <option value="Primary 1">Primary 1</option>
+                               <option value="Primary 2">Primary 2</option>
+                               <option value="Primary 3">Primary 3</option>
+                               <option value="Primary 4">Primary 4</option>
+                               <option value="Primary 5">Primary 5</option>
+                               <option value="Primary 6">Primary 6</option>
+                            </select>
+                            </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Post
+                                    Save Student
                                 </button>
                             </div>
                         </div>
