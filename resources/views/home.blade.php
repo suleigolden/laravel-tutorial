@@ -65,6 +65,30 @@
                         </div>
                     </form>
                 </div>
+
+                <!-- Display all Students Table -->
+                <div class="panel-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>First Name</th>
+                        <th>last Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Mobile Number</th>
+                        <th>update</th>
+                         <th>delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                  
+                </tbody>
+            </table>
+        </div>
+
+
             </div>
         </div>
     </div>
