@@ -151,7 +151,7 @@
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Save Student
+                                    Update Student
                                 </button>
                             </div>
                         </div>
@@ -161,7 +161,6 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" type="submit"  class="btn btn-primary">Update Student</button>
                                         </div>
                                          
                                     </div>
