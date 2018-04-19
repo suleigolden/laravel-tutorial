@@ -81,8 +81,22 @@
                          <th>delete</th>
                     </tr>
                 </thead>
+
                 <tbody>
-                    
+                    @foreach($student as $allstudent)
+                        <tr>
+                        <th>{{ $allstudent->id }}</th>
+                        <th>{{ $allstudent->First_Name }}</th>
+                        <th>{{ $allstudent->Last_Name }}</th>
+                        <th>{{ $allstudent->Gender }}</th>
+                        <th>{{ $allstudent->Class }}</th>
+                        <th>{{ $allstudent->mobileNumber }}</th>
+                        <th><button type="button" class="btn btn-warning">Update</button></th>
+                        <th> <a class="btn btn-danger" href={{"postcomment/delete/".$allstudent->id}}>
+                                   Delete
+                                </a></th>
+                    </tr>
+                    @endforeach
                   
                 </tbody>
             </table>

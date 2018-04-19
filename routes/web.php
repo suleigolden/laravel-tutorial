@@ -19,5 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//Get all Students record function
+Route::get('/home','StudentController@getallStudents');
+
 //Insert Route
 Route::post('/insertStudent','StudentController@InsertStudent');
