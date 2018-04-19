@@ -33,4 +33,17 @@ class StudentController extends Controller
     	 return back();
 
     }
+
+    public function updateStudent(Request $request){
+    	$student = Students::find($request->id);
+        $student->First_Name = isset($request->f_name) ? $request->f_name : $student->f_name;
+        $student->Last_Name = isset($request->l_name) ? $request->l_name : $student->l_name;
+        $student->Gender = isset($request->gender) ? $request->gender : $student->gender;
+        $student->Class = isset($request->class) ? $request->class : $student->class;
+        $student->mobileNumber = isset($request->m_number) ? $request->m_number : $student->m_number;
+        $student->save();
+
+        return back();
+
+    }
 }

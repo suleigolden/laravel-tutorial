@@ -19,11 +19,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//Get all Students record function
+//Get all Students record route
 Route::get('/home','StudentController@getallStudents');
 
-//Insert Route
+//Insert Students record route Route
 Route::post('/insertStudent','StudentController@InsertStudent');
 
-//Delete Route
+//Delete Students record route Route
 Route::get('/deleteStudent/delete/{student}','StudentController@deleteStudent');
+
+//Update Students record route
+//Route::post('/UpdateStudent/update','StudentController@updateStudent');
+Route::post('/UpdateStudent/update','StudentController@updateStudent');

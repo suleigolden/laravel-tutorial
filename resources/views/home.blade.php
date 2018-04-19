@@ -9,9 +9,8 @@
                 <div class="panel-heading">Manage Student Record</div>
 
                 <div class="panel-body">
-                     <form class="form-horizontal" method="POST" action="insertStudent">
+                     <form class="form-horizontal" method="POST" action="insertStudent"">
                         {{ csrf_field() }}
-
                          <div class="form-group">
                             <label for="name" class="col-md-4 control-label">First Name</label>
 
@@ -101,9 +100,9 @@
                                             <h4 class="modal-title" id="myModalLabel">ID {{ $allstudent->id }} : {{ $allstudent->First_Name }}</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <form class="form-horizontal" method="POST" action="insertStudent">
+                 <form class="form-horizontal" method="POST" action="UpdateStudent/update">
                         {{ csrf_field() }}
-
+                        <input type="hidden" name="id" value="{{ $allstudent->id }}">
                          <div class="form-group">
                             <label for="name" class="col-md-4 control-label">First Name</label>
 
@@ -149,6 +148,14 @@
                                 <input id="m_number" type="text" class="form-control" name="m_number" placeholder="Mobile Number" value="{{ $allstudent->mobileNumber }}" required autofocus>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Save Student
+                                </button>
+                            </div>
+                        </div>
+                        </form>
                        
                    
                                         </div>
@@ -156,7 +163,7 @@
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                             <button type="button" type="submit"  class="btn btn-primary">Update Student</button>
                                         </div>
-                                         </form>
+                                         
                                     </div>
                                     <!-- /.modal-content -->
                                 </div>
