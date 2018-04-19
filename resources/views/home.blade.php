@@ -163,7 +163,7 @@
                                 <!-- /.modal-dialog -->
                             </div>
                             </th>
-                        <th> <i class="fa fa-edit"></i><a class="btn btn-danger" href={{"postcomment/delete/".$allstudent->id}}>
+                        <th> <i class="fa fa-edit"></i><a class="btn btn-danger" href={{"deleteStudent/delete/".$allstudent->id}}>
                                    Delete
                                 </a></th>
                     </tr>

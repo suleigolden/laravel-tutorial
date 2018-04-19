@@ -24,3 +24,6 @@ Route::get('/home','StudentController@getallStudents');
 
 //Insert Route
 Route::post('/insertStudent','StudentController@InsertStudent');
+
+//Delete Route
+Route::get('/deleteStudent/delete/{student}','StudentController@deleteStudent');

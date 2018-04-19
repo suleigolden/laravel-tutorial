@@ -26,4 +26,11 @@ class StudentController extends Controller
     	$student  = Students::all();
 		return view('home', compact('student'));
     }
+
+    //Function to delete Students record
+     public function deleteStudent(Request $request,Students $student){
+    	 $student->delete();
+    	 return back();
+
+    }
 }
