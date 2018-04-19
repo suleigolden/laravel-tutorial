@@ -9,7 +9,7 @@
                 <div class="panel-heading">Manage Student Record</div>
 
                 <div class="panel-body">
-                     <form class="form-horizontal" method="POST" action="insertStudent"">
+                     <form class="form-horizontal" method="POST" action="insertStudent">
                         {{ csrf_field() }}
                          <div class="form-group">
                             <label for="name" class="col-md-4 control-label">First Name</label>
